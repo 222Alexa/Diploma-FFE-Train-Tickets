@@ -1,0 +1,262 @@
+.header {
+  height: 985px;
+  width: 1920px;
+  padding: 0;
+  top: 0;
+  left: -1px;
+}
+.header:before {
+  content: "";
+  position: absolute;
+  height: 985px;
+  width: 1920px;
+  top: 0;
+  left: -1px;
+  z-index: -1;
+  background:url("../../img/banner1.png") center/cover;
+  background-repeat: no-repeat;
+
+}
+
+.header-top {
+  padding-top: 15px;
+  background-color: rgba(0,0,0,0.6);
+  height: 64px;
+}
+
+.logo-container {
+  width: 104px;
+  height: 49px;
+  margin-left: 258px;
+  
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #e5e5e5;
+}
+#navBar {
+  width: 1919px;
+  height: 94px;
+  padding: 0;
+
+  background: #292929;
+}
+#navbarMain {
+  position: absolute;
+  width: 828px;
+  height: 43px;
+  left: 250px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+ul.navbar-nav.mr-auto.nav-list {
+  width: 100%;
+  justify-content: space-between;
+}
+.header-title {
+
+  width: 506px;
+  height: 170px;
+  margin-left: 348px;
+  margin-top: 415px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 72px;
+  line-height: 84px;
+
+  color: #ffffff;
+}
+
+.header-title.strong-text{
+  font-weight: 700;
+}
+.search-tickets__form{
+    width: 729px;
+    height: 574px;
+    margin: 0;
+    margin-top: 253px;
+    margin-left: 104px;
+    background: rgba(41, 41, 41, 0.8);
+}
+.reverse-button {
+  width: 24px;
+  height: 24px;
+ 
+  margin-top: 147px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+}
+.adventures {
+  position: absolute;
+  width: 100%;
+}
+.form-title {
+  position: absolute;
+  width: 231px;
+  height: 43px;
+  left: 28px;
+  top: 79px;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+.distantion-group {
+  position: absolute;
+  top: 129px;
+
+  width: 325px;
+}
+.date-group {
+  position: absolute;
+  top: 302px;
+  width: 325px;
+}
+
+.input-group-append {
+  width: 45px;
+  margin-left: -1px;
+  background-color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.from__input,
+.date-to__input,.to__input {
+  width: 280px;
+  height: 60px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+}
+.from__input:active{
+ 
+  outline-width: 0;
+ 
+}
+.travel-to {
+  width: 321px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.label__form-distantion,
+.label__form-date {
+  position: absolute;
+  width: 231px;
+  height: 43px;
+
+  top: 79px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+.label__form-date {
+  top: 250px;
+}
+
+button.btn.p-0.geo-btn {
+  background-color: #fff;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+button.btn.p-0.date-btn {
+  background-color: #fff;
+  position: absolute;
+  right: 18px;
+  top: 15px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+button.btn.p-0.date-btn:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.icon-geo, .icon-date {
+  width: 21px;
+  height: 30px;
+}
+.icon-date {
+ position: absolute;
+ left: -18px;
+}
+
+input[type="date"]{
+  text-transform: uppercase;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.header-border {
+  position: absolute;
+  width: 1932px;
+  height: 8px;
+  left: 0px;
+  top: 977px;
+  z-index: 100;
+  background: #ffa800;
+}
+
+.search-tickets__button {
+  position: absolute;
+  width: 323px;
+  height: 60px;
+  top: 454px;
+  background: #ffa800;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #292929;
+}
+.search-tickets__button:hover {
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button.btn.p-0.search-tickets__button:active {
+  background-color:  #E5E5E5;
+  color: #ffa800;
+
+  border: 1px solid #FFA800;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+}
+.ic_arrow {
+  width: 24px;
+  height: 24px;
+}

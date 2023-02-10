@@ -1,0 +1,20 @@
+import React from "react";
+import About from "../Main/About";
+import HowItWorks from "../Main/HowItWorks";
+import FeedBack from "../Main/FeedBack";
+
+import { nanoid } from "nanoid";
+
+const HomePage = () => {
+  return (
+    <React.Fragment>
+      <About key={nanoid} />
+
+      <HowItWorks key={nanoid()} />
+
+      <FeedBack key={nanoid()} />
+    </React.Fragment>
+  );
+};
+
+export default HomePage;
