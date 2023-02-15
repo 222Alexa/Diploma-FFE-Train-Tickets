@@ -26,12 +26,12 @@ const HowItWorks = () => {
             <div className="card-top how-it-works__img">
               <img
                 src={ic_subtract}
-                class="how-it-works__icon"
+                className="how-it-works__icon"
                 alt="icon subtract"
               />
             </div>
-            <div class="card-body p-0">
-              <h5 class="card-title how-it-works-puncts-item__title">
+            <div className="card-body p-0">
+              <h5 className="card-title how-it-works-puncts-item__title">
                 Удобный заказ на сайте
               </h5>
             </div>
@@ -40,12 +40,12 @@ const HowItWorks = () => {
             <div className="card-top how-it-works__img">
               <img
                 src={ic_house}
-                class="how-it-works__icon"
+                className="how-it-works__icon"
                 alt="icon subtract"
               />
             </div>
-            <div class="card-body p-0">
-              <h5 class="card-title how-it-works-puncts-item__title">
+            <div className="card-body p-0">
+              <h5 className="card-title how-it-works-puncts-item__title">
                 Нет необходимости ехать в офис
               </h5>
             </div>
@@ -54,12 +54,12 @@ const HowItWorks = () => {
             <div className="card-top how-it-works__img">
               <img
                 src={ic_globe}
-                class="how-it-works__icon"
+                className="how-it-works__icon"
                 alt="icon subtract"
               />
             </div>
-            <div class="card-body p-0">
-              <h5 class="card-title how-it-works-puncts-item__title">
+            <div className="card-body p-0">
+              <h5 className="card-title how-it-works-puncts-item__title">
                 Огромный выбор направлений
               </h5>
             </div>

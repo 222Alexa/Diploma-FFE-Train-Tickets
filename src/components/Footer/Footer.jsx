@@ -98,7 +98,7 @@ const Footer = () => {
                 className=" footer-copyright__up-link text-center"
                 href="#startLogo"
               >
-                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                <i className="fa fa-angle-up" aria-hidden="true"></i>
               </a>
               <span className="copyright-text">2018 Web</span>
             </div>

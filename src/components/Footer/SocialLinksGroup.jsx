@@ -13,16 +13,16 @@ const SocialLinksGroup = () => {
                     <i className="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
                 </a>
                 <a className="icon_link " href="#">
-                <i class="fa fa-linkedin fa-2x " aria-hidden="true"></i>
+                <i className="fa fa-linkedin fa-2x " aria-hidden="true"></i>
                 </a>
                 <a className="icon_link" href="#">
-                <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+                <i className="fa fa-google-plus fa-2x" aria-hidden="true"></i>
                 </a>
                 <a className="icon_link" href="#">
-                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                <i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
                 </a>
                 <a className="icon_link" href="#">
-                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                <i className="fa fa-twitter fa-2x" aria-hidden="true"></i>
                 </a>
 
               </div>

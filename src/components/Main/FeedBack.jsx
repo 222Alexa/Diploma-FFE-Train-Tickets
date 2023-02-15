@@ -26,13 +26,13 @@ const FeedBack = () => {
             <div className="card-top ifeedback-item__img-wrap">
               <img
                 src={data[0].avatar}
-                class="card feedback__img"
+                className="card feedback__img"
                 alt="avatar"
               />
             </div>
 
-            <div class="card-body p-0 body-feedback">
-              <p class="card-title feedback-item__author">{data[0].author}</p>
+            <div className="card-body p-0 body-feedback">
+              <p className="card-title feedback-item__author">{data[0].author}</p>
 
               <p className="feedback-item__text">
                 <svg
@@ -70,13 +70,13 @@ const FeedBack = () => {
             <div className="card-top ifeedback-item__img-wrap">
               <img
                 src={data[1].avatar}
-                class="card feedback__img"
+                className="card feedback__img"
                 alt="avatar"
               />
             </div>
 
-            <div class="card-body p-0 body-feedback">
-              <p class="card-title feedback-item__author">{data[1].author}</p>
+            <div className="card-body p-0 body-feedback">
+              <p className="card-title feedback-item__author">{data[1].author}</p>
 
               <p className="feedback-item__text">
                 {" "}

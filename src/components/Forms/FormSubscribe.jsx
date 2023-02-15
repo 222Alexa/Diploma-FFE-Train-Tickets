@@ -5,7 +5,7 @@ const FormSubscribe = () => {
       <div className="form-row form-subscribe">
         <input
           type="text"
-          class="form-control subscribe__input"
+          className="form-control subscribe__input"
           id="exampleInputSubscribe"
           aria-describedby="fromSubscribe"
           placeholder="e-mail"

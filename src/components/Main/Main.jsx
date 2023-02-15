@@ -1,14 +1,15 @@
 import { nanoid } from "nanoid";
 import React from "react";
 
-import HomePage from "../Pages/HomePage";
+import Banner from "./Banner";
 
-const Main = () => {
+const Main = (props) => {
   return (
     <main className="main container-fluid">
       <div className="row">
         <div className="col col-md p-0">
-          <HomePage key={nanoid()} />
+         
+          {props.children}
         </div>
       </div>
     </main>

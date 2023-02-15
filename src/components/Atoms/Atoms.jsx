@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Button = ({ text, onClick }) => {
-
   return (
     <React.Fragment>
       <div className="text-center">
@@ -13,11 +12,18 @@ export const Button = ({ text, onClick }) => {
   );
 };
 
-export const Title = ({ text }) => {
-
+export const Title = ({ text, strongText, className }) => {
   return (
     <React.Fragment>
-      <h5 className="text-center">{text}</h5>
+      <h2 className="header-title">
+        {text}
+        <strong className="strong-text">{strongText}</strong>
+      </h2>
     </React.Fragment>
   );
 };
+export const Border = ({className})=> {
+  return <React.Fragment>
+    <div className={className+"-border"}></div>
+  </React.Fragment>
+}
