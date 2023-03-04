@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import Calendar from "../DatePicker";
+
 import icon_geo from "../../img/icon_geo.svg";
 import ic_arrow from "../../img/ic_arrow.svg";
 import ic_calendar from "../../img/ic_calendar.svg";

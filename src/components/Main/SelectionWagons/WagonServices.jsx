@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import WagonServicesButtons from "../../Molecules/SelectionWagon/WagonServicesButtons";
 
 const WagonServices = ({ className, data }) => {
   /**группа кнопок для выбор допопций в вагонах */
-  const [services, setServices] = useState([
+  const services=[
     {
       name: "conditioning",
       included: data.coach.have_air_conditioning,
@@ -21,7 +21,7 @@ const WagonServices = ({ className, data }) => {
       price: data.coach.linens_price,
       selected: false,
     },
-  ]);
+  ];
   /*const servicesData = {
       wifi: data.coach.have_wifi,
       conditioning: data.coach.have_air_conditioning,

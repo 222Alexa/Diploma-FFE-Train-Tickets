@@ -34,6 +34,7 @@ const SwitchBlock = () => {
       setStatusChecked((prev) => {
         return { ...prev, [inputName]: checked };
       });
+      console.log(statusChecked);
     };
   
     return (

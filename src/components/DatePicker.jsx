@@ -9,20 +9,20 @@ import { createTheme } from "@mui/system";
 import {
   PickersDay,
   pickersDayClasses,
-  pickersDayProps,
+  //pickersDayProps,
 } from "@mui/x-date-pickers";
 import { makeStyles } from "@mui/styles";
 //import { styled } from "@mui/material/styles";
 import { ArrowLeft } from "@mui/icons-material";
 import { ArrowRight } from "@mui/icons-material";
 import ruLocale from "date-fns/locale/ru";
-import clsx from "clsx";
+//import clsx from "clsx";
 
 import {
-  getMonth,
-  getDate,
+  //getMonth,
+  //getDate,
   isSunday,
-  differenceInCalendarDays,
+  //differenceInCalendarDays,
 } from "date-fns";
 import { DatePicker } from "@mui/x-date-pickers";
 
@@ -78,29 +78,20 @@ const useStyles = makeStyles(
   { materialTheme }
 );
 
-/*const materialTheme = createTheme({
-  overrides: {
-    InputBase: {
-      fontFamily: ["Roboto", "sans-serif"].join(","),
-    },
-  },
-});*/
-
 const Calendar = () => {
   const [value, setValue] = useState(new Date());
-  const [selectedDate, handleDateChange] = useState(new Date());
 
   const handleChange = (newValue) => {
     setValue(newValue);
   };
 
-  const today = new Date(); // just Date object of today
+  //const today = new Date(); // just Date object of today
 
-  const getDayElement = (day, selectedDate, isInCurrentMonth, dayComponent) => {
-    const isSelected = getDate(day) === getDate(selectedDate[0]);
+  /*const getDayElement = (day, selectedDate, isInCurrentMonth, dayComponent) => {
+   const isSelected = getDate(day) === getDate(selectedDate[0]);
     const isToday =
       getDate(day) === getDate(today) && getMonth(day) === getMonth(today);
-  };
+  };*/
 
   const popperSx = {
     "& .MuiPopperUnstyled-root": { inset: "0px auto auto 0px" },
@@ -155,7 +146,6 @@ const Calendar = () => {
       color: "#e5e5e5",
     },
     "& .Mui-selected.MuiPickersDay-dayWithMargin.MuiPickersDay-today": {
-      border: "none",
       background: "rgba(255, 168, 0, 0.31)",
       border: "2px solid #FFA800",
       borderRadius: "5px",
@@ -164,7 +154,7 @@ const Calendar = () => {
       {
         fontSize: "24px",
         background: "rgba(255, 168, 0, 0.31)",
-        border: "2px solid #FFA800",
+
         borderRadius: "5px",
       },
     "& .MuiCalendarPicker-viewTransitionContainer": {
@@ -182,7 +172,7 @@ const Calendar = () => {
     ///console.log(date,pickersDayProps, 'date')
 
     const isSunDay = isSunday(new Date(date));
-   
+
     //pickersDayProps.day мог бы помочь , но я не понимаю как поставить условие на ыч в зависимости от значения pickersDayProps.day
     return (
       <PickersDay

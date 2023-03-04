@@ -1,9 +1,9 @@
-import React,{ useState } from "react";
-import WagonServicesButtons from "../../Molecules/SelectionWagon/WagonServicesButtons";
+import React from "react";
+
 import { filteredSeats } from "../../../utils/trainSelectionUtils";
 
 const WagonDetailsTable = ({ data }) => {
-console.log(data,'WagonDetailsTable' )
+
   const currencyIcon = (
     <svg
       className="amount-seats_details-price-currency"
@@ -82,19 +82,3 @@ console.log(data,'WagonDetailsTable' )
 
 export default WagonDetailsTable;
 
-
-/**<th
-              scope="col"
-              className={"amount-seats_table-title"}
-              title="Обслуживание"
-            >
-              Обслуживание
-            </th>
-            <th
-              scope="col"
-              className={"amount-seats_table-title"}
-              style={{color:"color: #C4C4C4"}}
-              title="ФПК"
-            >
-              ФПК
-            </th> */

@@ -1,6 +1,6 @@
 import React from "react";
-import { Title, Button, MySvgIcon } from "../../Atoms/Atoms";
-import icon_passengers_plus from "../../../img/passengers/icon_passengers_plus.svg";
+import { Title, Button } from "../../Atoms/Atoms";
+
 const AddPassenger = ({ state, setState }) => {
   
   const onClick = () => {

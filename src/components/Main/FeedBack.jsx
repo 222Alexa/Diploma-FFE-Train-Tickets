@@ -113,19 +113,19 @@ const FeedBack = () => {
 
         <ul className="pagination-feedback p-0">
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#"></a>
+            <a className="page-feedback-item" href="#feedback"></a>
           </li>
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#"></a>
+            <a className="page-feedback-item" href="#feedback"></a>
           </li>
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#"></a>
+            <a className="page-feedback-item" href="#feedback"></a>
           </li>
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#"></a>
+            <a className="page-feedback-item" href="#feedback"></a>
           </li>
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#"></a>
+            <a className="page-feedback-item" href="#feedback"></a>
           </li>
         </ul>
       </section>

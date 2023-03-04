@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import CardIconsBlock from "./CardIconsBlock";
 import { capitalizeFirstLetter } from "../../../../utils/trainSelectionUtils";
 import { nanoid } from "nanoid";
-import { format, formatDistance, formatRelative, subDays } from "date-fns";
+import { format } from "date-fns";
 
 //console.log(format(new Date(1643372089), "hh:mm"));
 const TrainsMenuCard = ({ departure, onClick }) => {

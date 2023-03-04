@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ControlledCheckbox from "../Molecules/ControlledCheckbox";
 import ControllableStates from "../Molecules/ControllableStates";
 import ControlledInput from "../Molecules/ControlledInput";
@@ -25,6 +25,7 @@ const FormPassengersInfo = () => {
         <div className="passengers-data_type">
           <ControllableStates
             type="age"
+            state ={age}
             setState={setAge}
             options={["Взрослый", "Детский"]}
           />

@@ -7,12 +7,10 @@ const SearchControls = () => {
   const clickHandler = (event) => {
     event.preventDefault();
     setValue(event.target.textContent);
-    console.log(event.target, "event");
+   
   };
 
-  const clickHandlerLimit = (event) => {
-    
-  }
+
   return (
     <React.Fragment>
       <div className="search-controls__wrap d-flex">

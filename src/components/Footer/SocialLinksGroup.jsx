@@ -9,19 +9,19 @@ const SocialLinksGroup = () => {
                 Подписывайтесь на нас
               </h5>
               <div className="footer-social__icons-group">
-                <a className="icon_link icon-bottom" href="#">
+                <a className="icon_link icon-bottom" href="#youtube">
                     <i className="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
                 </a>
-                <a className="icon_link " href="#">
+                <a className="icon_link " href="#linkedin">
                 <i className="fa fa-linkedin fa-2x " aria-hidden="true"></i>
                 </a>
-                <a className="icon_link" href="#">
+                <a className="icon_link" href="#google">
                 <i className="fa fa-google-plus fa-2x" aria-hidden="true"></i>
                 </a>
-                <a className="icon_link" href="#">
+                <a className="icon_link" href="#facebook">
                 <i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
                 </a>
-                <a className="icon_link" href="#">
+                <a className="icon_link" href="#twitter">
                 <i className="fa fa-twitter fa-2x" aria-hidden="true"></i>
                 </a>
 

@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Slider, {
-  SliderThumb,
-  SliderValueLabelProps,
-} from "@mui/material/Slider";
+import Slider from "@mui/material/Slider";
 import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
+
 //import Tooltip from "@mui/material/Tooltip";
 
 const RangeSlider = ({ min, max, height }) => {

@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 
-import { nanoid } from "nanoid";
 const useJsonFetch = (url, opts) =>  {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
