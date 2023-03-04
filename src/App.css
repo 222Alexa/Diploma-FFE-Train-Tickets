@@ -3,6 +3,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -90,9 +91,12 @@ input:active,
 input:focus {
   border: none !important;
   outline: none !important;
-  box-shadow: none !important;
+ box-shadow: none ;
   -o-transition: color 0 ease-in;
   transition: none;
+}
+input:active,.form-control:focus{
+  box-shadow: none ;
 }
 button:active,
 button:focus {

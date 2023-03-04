@@ -21,7 +21,7 @@ const Banner = () => {
           className="header-title"
         />:null}
 
-        <img src={banner} className="img-fluid" alt="train" />
+        <img src={banner} className="img-banner" alt="train" />
       </div>
     </React.Fragment>
   );

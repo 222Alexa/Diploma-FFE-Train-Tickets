@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import { nanoid } from "nanoid";
-
 const SearchControls = () => {
   const [value, setValue] = useState("времени");
   const amount = 20; //количество поездов, заглушка на сейчас
@@ -11,6 +9,10 @@ const SearchControls = () => {
     setValue(event.target.textContent);
     console.log(event.target, "event");
   };
+
+  const clickHandlerLimit = (event) => {
+    
+  }
   return (
     <React.Fragment>
       <div className="search-controls__wrap d-flex">

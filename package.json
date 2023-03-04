@@ -1,5 +1,5 @@
 {
-  "name": "react-observable-main-details",
+  "name": "diploma-ffe-train-tickets",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,13 +8,16 @@
     "@emotion/styled": "^11.10.5",
     "@material-ui/core": "^4.12.4",
     "@material-ui/lab": "^4.0.0-alpha.61",
+    "@mui/icons-material": "^5.11.9",
     "@mui/lab": "^5.0.0-alpha.119",
     "@mui/material": "^5.11.8",
+    "@mui/styles": "^5.11.9",
     "@mui/x-date-pickers": "^5.0.18",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.1",
+    "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
     "nanoid": "^4.0.0",
     "react": "^18.2.0",
@@ -49,5 +52,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://222alexa.github.io/diploma-ffe-train-tickets/"
 }

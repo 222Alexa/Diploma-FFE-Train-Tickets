@@ -1,13 +1,13 @@
 import React from "react";
 
-export const Button = ({ text, onClick }) => {
+export const Button = ({  id, type, text, onClick, children }) => {
   return (
     <React.Fragment>
-      <div className="text-center">
-        <button className="btn btn-outline-primary" onClick={onClick}>
-          {text}
+    
+        <button id={id} className={type + "_btn btn text-center"} onClick={onClick}>
+          {text? text:children}
         </button>
-      </div>
+
     </React.Fragment>
   );
 };
@@ -15,7 +15,7 @@ export const Button = ({ text, onClick }) => {
 export const Title = ({ text, strongText, className }) => {
   return (
     <React.Fragment>
-      <h2 className="header-title">
+      <h2 className={className? className:"header-title"}>
         {text}
         <strong className="strong-text">{strongText}</strong>
       </h2>
@@ -27,3 +27,13 @@ export const Border = ({className})=> {
     <div className={className+"-border"}></div>
   </React.Fragment>
 }
+
+export const MySvgIcon = ({ type, icon, className }) => {
+  return (
+    <React.Fragment>
+      <div className={type + "-svgIcon-wrap "}>
+        <img src={icon} alt={""} className={className + "__icon"}/>
+      </div>
+    </React.Fragment>
+  );
+};

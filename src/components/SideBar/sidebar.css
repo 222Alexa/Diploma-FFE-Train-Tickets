@@ -1,0 +1,432 @@
+.sidebar {
+  margin-top: 193px;
+  margin-left: 259px;
+  margin-right: 86px;
+  background: #3e3c41;
+  width: 360px;
+  min-height: 1012px;
+}
+
+/*DatePicker*/
+/*.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPickersPopper-paper.css-1yllih9-MuiPaper-root-MuiPickersPopper-paper {
+  position: absolute;
+  top: 15px;
+  left: 29px;
+  width: 352px;
+  height: 302px;
+}
+
+.MuiCalendarPicker-root.css-169iwlq-MuiCalendarPicker-root:before {
+  content: "";
+  border: 15px solid transparent;
+  border-bottom-color: #fff;
+  position: absolute;
+  margin: -30px 0px 0 152px;
+}
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  background: #fff;
+  width: 295px;
+  height: 43px;
+}
+.MuiDayPicker-header.css-qklzlb-MuiDayPicker-header {
+  display: none;
+}
+button.MuiButtonBase-root.MuiPickersDay-root.Mui-selected.MuiPickersDay-dayWithMargin.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root {
+  background-color: inherit;
+  color: #000;
+}
+
+button.MuiButtonBase-root.MuiPickersDay-root.MuiPickersDay-dayWithMargin.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root,
+button.MuiButtonBase-root.MuiPickersDay-root.MuiPickersDay-dayWithMargin.MuiPickersDay-today.css-195y93z-MuiButtonBase-root-MuiPickersDay-root {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+button.MuiButtonBase-root.MuiPickersDay-root.MuiPickersDay-dayWithMargin.MuiPickersDay-dayOutsideMonth.css-2h3pab-MuiButtonBase-root-MuiPickersDay-root {
+  font-size: 24px;
+  color: #e5e5e5;
+}
+.css-fa7fei-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  background: rgba(255, 168, 0, 0.31);
+  border: 2px solid #ffa800;
+  border-radius: 5px;
+  font-size: 24px;
+}*/
+/*side-bar-form-calendar*/
+.form-row.sidebar-form,
+.form-sidebar-block {
+  height: 280px;
+  padding: 43px 36px 33px 28px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+h2.form-sidebar-block_arrival_title,
+h2.form-sidebar-block_departure_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+
+.group-departure_wrap,
+.group-arrival_wrap {
+  position: relative;
+}
+.form-sidebar-block_arrival {
+  margin-top: 26px;
+}
+/*.ui-datepicker {
+  width: 352px;
+  height: 302px;
+  background: #fff;
+}
+
+.ui-datepicker::before {
+  content: "";
+  border: 15px solid transparent;
+  border-bottom-color: #fff;
+  position: absolute;
+  margin: -30px 0px 0 152px;
+}
+.sidebar_departure-calendar.ui-datepicker {
+  position: absolute;
+  left: -19px;
+  top: 100px;
+  z-index: 10;
+}
+.sidebar_arrival-calendar.ui-datepicker {
+  position: absolute;
+  z-index: 10;
+  left: -19px;
+  top: 100px;
+}
+.ui-datepicker-header {
+  height: 72px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+table.ui-datepicker-calendar {
+  margin: 0 auto;
+}
+
+.ui-datepicker-header {
+  height: 52px;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 2px solid #c4c4c4;
+}
+button.btn.date-picker_btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding: 5px;
+  width: 28px;
+  height: 28px;
+  margin: 4px;
+  border-radius: 4px;
+}
+.btn_strong-text {
+  font-weight: 600;
+}
+button.btn.date-picker_btn.btn-current-month,
+button.btn.date-picker_btn.btn-today {
+  color: #000;
+}
+button.btn.date-picker_btn.btn-current-month_last-day {
+  color: #928f94;
+}
+/**border: 1px solid #FFA800;*/
+/**/
+label.label__form-sidebar-date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.input-group.sidebar-date-group.sidebar-date-from {
+  margin-bottom: 26px;
+}
+.input-group.sidebar-date-group.sidebar-date-from,
+.input-group.sidebar-date-group.sidebar-date-to {
+  width: 295px;
+}
+input#sidebarInputDateFrom,
+input#sidebarInputDateTo {
+  height: 43px;
+  width: 295px;
+  background: #ffffff;
+  border-radius: 3px;
+}
+.sidebar-from__input,
+.sidebar-to__input {
+  height: 43px;
+}
+button.btn.p-0.sidebar-form-date_btn {
+  position: absolute;
+  top: 5px;
+  right: 11px;
+}
+.sidebar-switch-block {
+  height: 354px;
+  padding-top: 29px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*Switch*/
+/*Это надо найти время и работать с MuiTypography, а ен так топорн, но - "зона моего роста, пока так(с)"*/
+
+.sidebar-switch-block-form-item {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar-switch-block-form-item {
+  display: flex;
+  justify-content: flex-end;
+  height: 21px;
+  margin-bottom: 35px;
+}
+.MuiFormGroup-root {
+  margin-right: 34px;
+}
+
+label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementStart {
+  margin: 0;
+}
+span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-right: 33px;
+  margin-left: 34px;
+  width: 102px;
+}
+
+.sidebar-price-block {
+  height: 187px;
+  padding-top: 37px;
+  border-bottom: 1px solid #e5e5e5;
+}
+h2.sidebar-price-block__title {
+  width: 331px;
+  height: 46px;
+  margin: 0;
+
+  margin-left: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+
+span.MuiSlider-mark.css-1tfve6q-MuiSlider-mark {
+  background-color: inherit;
+}
+span.MuiSlider-markLabel.css-yafthl-MuiSlider-markLabel {
+}
+
+/*span.MuiSlider-track.css-1gv0vcd-MuiSlider-track {
+  left: 4.08889%;
+  width: 91.8222%;
+}*/
+span.MuiSlider-markLabel.MuiSlider-markLabelActive.css-1eoe787-MuiSlider-markLabel {
+  /*margin-left: 20px;*/
+}
+
+.sidebar-price-block_description {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: 34px;
+  margin-right: 34px;
+  margin-bottom: 5px;
+  height: 23px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.sidebar-side-block {
+}
+
+.sidebar-side-block.sidebar-block-departure {
+  margin-top: 27px;
+}
+
+.sidebar-side-block_header {
+  display: flex;
+  align-items: center;
+  margin: 27px 34px 25px 32px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+
+h2.sidebar-side-block_title {
+  width: 231px;
+  height: 35px;
+
+  margin: 0;
+  margin-left: 12px;
+}
+img.sidebar-block-arrival_arrow__icon {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+button.sidebar-side-block_btn.btn.text-center {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  line-height: 0;
+}
+
+.sidebar-side-block.sidebar-block-arrival {
+  min-height: 94px;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+/*timing*/
+
+.arrival_timing-block {
+  padding-bottom: 14px;
+}
+.time-end__wrap {
+  margin-top: 45px;
+  height: 140px;
+}
+
+.time-start__wrap {
+  height: 78px;
+}
+
+h2.departure_time-start-title,
+h2.departure_time-end-title,
+h2.arrival_time-start-title,
+h2.arrival_time-end-title {
+  margin: -3px 35px 15px 29px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e5e5e5;
+}
+h2.departure_time-end-title,
+h2.arrival_time-end-title {
+  text-align: right;
+}
+
+/**LastTickets*/
+
+.last-tickets-block {
+  width: 360px;
+  margin-top: 94px;
+  margin-left: 259px;
+  margin-right: 86px;
+}
+
+h2.last-tickets__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  color: #000000;
+}
+
+.card-deck.last-tickets-menu-group.no-gutters {
+  display: flex;
+  flex-direction: column;
+}
+
+.card.last-tickets-menu-item {
+  display: flex;
+  padding: 18px;
+  border-radius: 0;
+  margin-bottom: 17px;
+  border: 1px solid #c4c4c4;
+  box-shadow: 0px 2px 2px rgb(62 60 65 / 25%);
+}
+
+.card-body.p-0.last-tickets__card {
+  display: flex;
+  justify-content: space-between;
+}
+span.last-tickets_train-departure.data-trains-city-name,
+span.last-tickets_train-departure-to.data-trains-city-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #292929;
+}
+span.last-tickets_train-departure.data-trains-railway_station_name,
+span.last-tickets_train-departure-to.data-trains-railway_station_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+  width: 70%;
+  color: #928f94;
+}
+.card-bottom.last-tickets__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 29px;
+}
+.last-tickets__card-price {
+  height: 35px;
+}
+span.last-tickets__card_min-price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffa800;
+}
+
+i.fa.fa-rub.last-tickets__card_bottom-icon.currency-icon {
+  color: #928f94;
+  font-size: 32px;
+  font-weight: 100;
+}

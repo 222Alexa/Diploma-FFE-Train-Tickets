@@ -1,0 +1,14 @@
+.MuiCalendarPicker-root.css-169iwlq-MuiCalendarPicker-root {
+  width: 352px;
+  height: 302px;
+}
+button.MuiButtonBase-root.MuiPickersDay-root.MuiPickersDay-dayWithMargin.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root {
+  font-size: 18px;
+}
+
+button.MuiButtonBase-root.MuiPickersDay-root.Mui-selected.MuiPickersDay-dayWithMargin.MuiPickersDay-today.css-195y93z-MuiButtonBase-root-MuiPickersDay-root {
+  font-size: 18px;
+  background-color: rgba(255, 168, 0, 0.3);
+  border: 1px solid #ffa800;
+  color: #000;
+}
