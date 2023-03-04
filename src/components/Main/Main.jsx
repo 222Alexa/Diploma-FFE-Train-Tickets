@@ -6,7 +6,7 @@ const Main = (props) => {
   const location = useLocation();
 
   const classBased =
-    location.pathname === "/"
+    location.pathname === "/diploma-ffe-train-tickets"
       ? "main-content__home-page"
       : "main-content__wrap d-flex";
   return (
@@ -15,7 +15,7 @@ const Main = (props) => {
         <div className="col col-lg p-0">
           <ProgressBar />
           <div className={classBased}>
-            {location.pathname !== "/" ? <SideBar /> : null}
+            {location.pathname !== "/diploma-ffe-train-tickets" ? <SideBar /> : null}
             {props.children}
           </div>
         </div>

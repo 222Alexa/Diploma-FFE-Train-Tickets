@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 const ProgressBar = () => {
-  if (useLocation().pathname === "/") {
+  if (useLocation().pathname === "/diploma-ffe-train-tickets") {
     return;
   }
   /**Это вообще что должно быть - просто цветные плашки, меняющие цвет в зависимости от страницы

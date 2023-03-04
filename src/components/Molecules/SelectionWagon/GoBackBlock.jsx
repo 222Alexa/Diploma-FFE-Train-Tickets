@@ -8,7 +8,7 @@ const GoBackBlock = ({ className, type }) => {
     const navigate=useNavigate();
 
     const clickHandler =() => {
-navigate("/trains");
+navigate("/diploma-ffe-train-tickets/trains");
     }
     return (
       <React.Fragment>

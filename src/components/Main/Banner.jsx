@@ -7,14 +7,14 @@ import { nanoid } from "nanoid";
 
 const Banner = () => {
   const location = useLocation();
-  const banner = location.pathname === "/" ? banner1 : banner3;
+  const banner = location.pathname === "/diploma-ffe-train-tickets" ? banner1 : banner3;
   /**style={{height:location.pathname === "/"?"985px":"592px"}} */
   return (
     <React.Fragment>
       <div 
-        className={location.pathname === "/" ? "banner banner-home" : "banner"}
+        className={location.pathname === "/diploma-ffe-train-tickets" ? "banner banner-home" : "banner"}
       >
-      {location.pathname === "/" ?  <Title
+      {location.pathname === "/diploma-ffe-train-tickets" ?  <Title
           key={nanoid()}
           text="Вся жизнь - "
           strongText={"путешествие!"}

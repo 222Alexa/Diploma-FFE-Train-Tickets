@@ -4,14 +4,14 @@ import TextField from "@mui/material/TextField";
 
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider } from "@mui/x-date-pickers";
-import { createTheme } from "@mui/system";
+//import { createTheme } from "@mui/system";
 
 import {
   PickersDay,
   pickersDayClasses,
   //pickersDayProps,
 } from "@mui/x-date-pickers";
-import { makeStyles } from "@mui/styles";
+//import { makeStyles } from "@mui/styles";
 //import { styled } from "@mui/material/styles";
 import { ArrowLeft } from "@mui/icons-material";
 import { ArrowRight } from "@mui/icons-material";
@@ -21,10 +21,12 @@ import ruLocale from "date-fns/locale/ru";
 import {
   //getMonth,
   //getDate,
-  isSunday,
+  //isSunday,
   //differenceInCalendarDays,
 } from "date-fns";
 import { DatePicker } from "@mui/x-date-pickers";
+
+
 
 /**Вот здесь у меня очень большие проблемы(
  * 1. Я не могу заставить Popper скрывать год в хедере, я не понимаю откуда он берет такой формат даты, крутила везде -
@@ -32,11 +34,11 @@ import { DatePicker } from "@mui/x-date-pickers";
  * Нашла вариант переписать локаль самой с большой буквой и... год все равно ведь пролезет(((Помогите<!DOCTYPE html>
  *
  * 2. Мне не подружить в PickerDAy clsx и sxPopper. второй перекрывает классы первого. использовать что-одно не получается:
- * clsx знает какой понимает, что за день я ему передыю и подставляет класс,
+ * clsx знает какой понимает, что за день я ему передаю и подставляет класс,
  * sxPopper все равно какой день и класс, зато он понимает selected.
  * Как это связапть-то друг с другом?
  */
-const materialTheme = createTheme({
+/*const materialTheme = createTheme({
   components: {
     // Name of the component
 
@@ -50,7 +52,9 @@ const materialTheme = createTheme({
       },
     },
   },
-});
+});*/
+
+/*
 
 const useStyles = makeStyles(
   () => ({
@@ -76,7 +80,7 @@ const useStyles = makeStyles(
     },
   }),
   { materialTheme }
-);
+);*/
 
 const Calendar = () => {
   const [value, setValue] = useState(new Date());

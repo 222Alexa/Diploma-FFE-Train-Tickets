@@ -14,7 +14,7 @@ const TrainsMenu = () => {
 
   const clickHandler = (id) => {
   
-    navigate(`/${id}`);
+    navigate(`/diploma-ffe-train-tickets/${id}`);
   };
 
   return (

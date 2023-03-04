@@ -8,7 +8,7 @@ import ic_calendar from "../../img/ic_calendar.svg";
 const FormSearchTickets = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  if (location.pathname !== "/") {
+  if (location.pathname !== "/diploma-ffe-train-tickets") {
     return;
   }
 
@@ -99,7 +99,7 @@ const FormSearchTickets = () => {
           <button
             type="button"
             className="btn  p-0 search-tickets__button"
-            onClick={() => navigate("/trains")}
+            onClick={() => navigate("/diploma-ffe-train-tickets/trains")}
           >
             Найти Билеты
           </button>

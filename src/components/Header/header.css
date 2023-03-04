@@ -1,5 +1,5 @@
 .header {
- /* height: 985px;*/
+  /* height: 985px;*/
   width: 1920px;
   padding: 0;
   top: 0;
@@ -84,13 +84,15 @@ ul.navbar-nav.mr-auto.nav-list {
   font-weight: 700;
 }
 .search-tickets__form {
-  position: absolute;
+  /*position: absolute;*/
   width: 729px;
   height: 568px;
   margin: 0;
-  bottom: 8px;
+  margin-top: 253px;
+  margin-left: 958px;
+  /* bottom: 8px;*/
 
-  right: 247px;
+  margin-right: 247px;
 
   background: rgba(41, 41, 41, 0.8);
 }
@@ -221,7 +223,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
 }
 .header-border {
-
   width: 1932px;
   height: 8px;
   left: 0px;
