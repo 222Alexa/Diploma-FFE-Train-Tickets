@@ -166,12 +166,12 @@ const Calendar = () => {
     },
   };
 
-  const classes = useStyles();
+  //const classes = useStyles();
 
   const renderPickerDay = (date, selectedDates, pickersDayProps) => {
     ///console.log(date,pickersDayProps, 'date')
 
-    const isSunDay = isSunday(new Date(date));
+    //const isSunDay = isSunday(new Date(date));
 
     //pickersDayProps.day мог бы помочь , но я не понимаю как поставить условие на ыч в зависимости от значения pickersDayProps.day
     return (
@@ -249,3 +249,8 @@ export default Calendar;
 /**Popper отображает в другом месте в дереве DOM, чем ввод текстового поля компонента picker. Значения стиля должны быть переданы непосредственно в popper. */
 
 /**https://github.com/netology-code/fe-2-diplom/blob/master/api/seats.md/*/
+
+
+/**Большая часть закомментирована, потому что  пока я разбираюсь с библиотеками
+ * CI считает варнинги ошибками и не разворачивает ghp
+ */
