@@ -2,6 +2,8 @@ import React from "react";
 import author_1 from "../../img/feedback/auhtor_1.jpg";
 import author_2 from "../../img/feedback/author_2.jpg";
 
+
+/*eslint jsx-a11y/anchor-has-content:0*/
 const data = [
   {
     id: 1,
@@ -22,7 +24,7 @@ const FeedBack = () => {
       <section className="feedback" id="feedback">
         <h2 className="feedback__title">Отзывы</h2>
         <div className="card-deck feedback-group">
-          <div className="card card-feedback-item">
+          <div className="card card-feedback-item"id="feedback1">
             <div className="card-top ifeedback-item__img-wrap">
               <img
                 src={data[0].avatar}
@@ -66,7 +68,7 @@ const FeedBack = () => {
               </p>
             </div>
           </div>
-          <div className="card card-feedback-item">
+          <div className="card card-feedback-item" id="feedback2">
             <div className="card-top ifeedback-item__img-wrap">
               <img
                 src={data[1].avatar}
@@ -113,19 +115,19 @@ const FeedBack = () => {
 
         <ul className="pagination-feedback p-0">
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#feedback"></a>
+            <a className="page-feedback-item" href="#feedback1"></a>
           </li>
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#feedback"></a>
+            <a className="page-feedback-item" href="#feedback2"></a>
           </li>
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#feedback"></a>
+            <a className="page-feedback-item" href="#feedback1"></a>
           </li>
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#feedback"></a>
+            <a className="page-feedback-item" href="#feedback2"></a>
           </li>
           <li className="page-feedback-item disabled">
-            <a className="page-feedback-item" href="#feedback"></a>
+            <a className="page-feedback-item" href="#feedback1"></a>
           </li>
         </ul>
       </section>
