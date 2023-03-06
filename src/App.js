@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/diploma-ffe-train-tickets" element={<Layout />}>
+        <Route path="/Diploma-FFE-Train-Tickets" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="trains" element={<SelectionTrain />} />
           <Route path="trains/:id" element={<SelectionWagons />} />

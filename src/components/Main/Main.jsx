@@ -1,21 +1,25 @@
 import React from "react";
 import ProgressBar from "./SelectionTrain/ProgressBar";
 import SideBar from "../SideBar/SideBar";
+import Banner from "./Banner";
 import { useLocation } from "react-router-dom";
 const Main = (props) => {
   const location = useLocation();
 
   const classBased =
-    location.pathname === "/diploma-ffe-train-tickets"
+    location.pathname === "/Diploma-FFE-Train-Tickets"
       ? "main-content__home-page"
       : "main-content__wrap d-flex";
   return (
     <main className="main container-fluid">
       <div className="row">
         <div className="col col-lg p-0">
+          <Banner />
           <ProgressBar />
           <div className={classBased}>
-            {location.pathname !== "/diploma-ffe-train-tickets" ? <SideBar /> : null}
+            {location.pathname !== "/Diploma-FFE-Train-Tickets" ? (
+              <SideBar />
+            ) : null}
             {props.children}
           </div>
         </div>

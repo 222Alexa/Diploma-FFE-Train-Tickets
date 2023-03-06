@@ -1,3 +1,13 @@
+.main-content__home-page {
+  margin-top: 819px;
+}
+.progress-border {
+  width: 1932px;
+  height: 8px;
+
+  z-index: 100;
+  background: #ffa800;
+}
 section.about {
   max-width: 1920px;
   margin-left: 258px;

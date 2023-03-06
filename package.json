@@ -24,6 +24,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.5.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "reselect": "^4.1.7",
     "rxjs": "^7.8.0",
@@ -53,5 +54,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://222alexa.github.io/diploma-ffe-train-tickets/"
+  "homepage": "https://222alexa.github.io/Diploma-FFE-Train-Tickets"
 }

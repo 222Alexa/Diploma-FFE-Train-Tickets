@@ -9,6 +9,7 @@
   position: absolute;
   left: -1px;
   z-index: -1;
+  top: -158px;
 }
 .banner-home {
   position: absolute;
@@ -84,17 +85,15 @@ ul.navbar-nav.mr-auto.nav-list {
   font-weight: 700;
 }
 .search-tickets__form {
-  /*position: absolute;*/
   width: 729px;
   height: 568px;
   margin: 0;
-  margin-top: 253px;
+  margin-top: -560px;
   margin-left: 958px;
-  /* bottom: 8px;*/
-
+  bottom: 0;
   margin-right: 247px;
-
   background: rgba(41, 41, 41, 0.8);
+
 }
 .reverse-button {
   width: 24px;
@@ -222,14 +221,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
-.header-border {
-  width: 1932px;
-  height: 8px;
-  left: 0px;
-  margin-top: 819px;
-  z-index: 100;
-  background: #ffa800;
-}
+
 
 .search-tickets__button {
   position: absolute;

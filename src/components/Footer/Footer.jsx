@@ -91,7 +91,7 @@ const Footer = () => {
           <div className="col col-lg p-0">
             <div className="footer-border"></div>
             <div className="copyright">
-              <Link to="/" className="logo__footer-link">
+              <Link to="/diploma-ffe-train-tickets" className="logo__footer-link">
                 <span>Лого</span>
               </Link>
               <a

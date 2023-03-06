@@ -204,7 +204,9 @@ button.btn.p-0.sidebar-form-date_btn {
 .MuiFormGroup-root {
   margin-right: 34px;
 }
-
+.sidebar-switchbox-svgIcon-wrap {
+  margin-top: -6px;
+}
 label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementStart {
   margin: 0;
 }

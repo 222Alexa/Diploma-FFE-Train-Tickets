@@ -1,5 +1,6 @@
 import React from "react";
 
+import { HashLink as Link } from "react-router-hash-link";
 
 const NavBar = () => {
   return (
@@ -11,24 +12,31 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarMain">
           <ul className="navbar-nav mr-auto nav-list">
             <li className="nav-item active">
-              <a className="nav-link" href="#about">
+              <Link className="nav-link" to="/Diploma-FFE-Train-Tickets#about">
+                {" "}
                 О нас
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#howItWorks">
+              <Link
+                className="nav-link"
+                to="/Diploma-FFE-Train-Tickets#howItWorks"
+              >
                 Как это работает
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#feedback">
+              <Link
+                className="nav-link"
+                to="/Diploma-FFE-Train-Tickets#feedback"
+              >
                 Отзывы
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#footer">
+              <Link className="nav-link" to="#footer">
                 Контакты
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

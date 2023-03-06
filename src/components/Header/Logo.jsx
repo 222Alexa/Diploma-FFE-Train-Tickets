@@ -5,7 +5,7 @@ import "./header.css";
 const Logo = () => {
   return (
     <React.Fragment>
-      <Link to="/diploma-ffe-train-tickets" className="logo-container" id="startLogo">
+      <Link to="/Diploma-FFE-Train-Tickets" className="logo-container" id="startLogo">
         Лого
       </Link>
     </React.Fragment>

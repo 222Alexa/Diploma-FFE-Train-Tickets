@@ -12,7 +12,7 @@ import LastTickets from "./LastTickets";
 
 const SideBar = () => {
   const location = useLocation();
-  if (location.pathname === "/") {
+  if (location.pathname === "/Diploma-FFE-Train-Tickets") {
     return;
   }
 
