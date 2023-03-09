@@ -58,7 +58,7 @@ const PassengersInfo = () => {
           <Button
             text="Далее"
             type="next-block"
-            onClick={() => navigate("personal_information")}
+            onClick={() => navigate("/Diploma-FFE-Train-Tickets/personalInformation")}
           ></Button>
         </div>
       </div>

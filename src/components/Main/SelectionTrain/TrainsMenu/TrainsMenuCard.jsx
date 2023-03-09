@@ -1,151 +1,124 @@
 import React from "react";
 import AvailableVagons from "./AvailableVagons";
 import { useNavigate, useParams } from "react-router-dom";
+import Card from "../../CardsBlock/Card";
+import { CardTop, CardBody, CardBottom } from "../../CardsBlock/CardsMolecules";
 import CardIconsBlock from "./CardIconsBlock";
-import { capitalizeFirstLetter } from "../../../../utils/trainSelectionUtils";
+import { Button, MySvgIcon } from "../../../Atoms/Atoms";
+import TrainInfo from "../../../Molecules/SelectionWagon/TrainInfo";
+import TrailsData from "../../../Molecules/SelectionTrain/TrailsData";
+
+import icon_train from "../../../../img/selectionTrain/icon_train.svg";
+import icon_yellow_arrow_right from "../../../../img/selectionTrain/icon_yellow-arrow-right.svg";
+
 import { nanoid } from "nanoid";
-import { format } from "date-fns";
 
-//console.log(format(new Date(1643372089), "hh:mm"));
 const TrainsMenuCard = ({ departure, onClick }) => {
-  const params=useParams();
-  const navigate=useNavigate();
-  params.id=departure.train._id;
-//console.log(departure, 'departure.train._id')
-    return (
-      <React.Fragment>
-        <div
-          key={departure.train._id}
-          className="card card-trains-menu-item"
-        >
-          <div key={nanoid()} className="card-top card-trains-menu-item-top">
-            <div key={nanoid()} className="icon-train text-center">
-              <i
-                className="fa fa-subway fa-3x subway-icon"
-                aria-hidden="true"
-              ></i>
-            </div>
-            <h6 className="train-departure trains-number">###</h6>
-            <div className="trail">
-              <span key={nanoid()} className="trail-city-name">
-                {capitalizeFirstLetter (departure.from.city.name)}
-              </span>
-              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-              <span key={nanoid()} className="trail-city-name d-block">
-                {capitalizeFirstLetter (departure.to.city.name)}
-              </span>
-              <div key={nanoid()} className="train-name">
-                <i className="fa fa-angle-double-left" aria-hidden="true"></i>
-                <span>{departure.train.name}</span>
-                <i className="fa fa-angle-double-right" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-  
-          <div
-            key={nanoid()}
-            className="card-body p-0 card-trains-menu-item-body"
-          >
-            <div className="data-trains-group d-flex flex-row">
-              <div className="train-departure-from d-flex flex-column">
-                <span
-                  key={nanoid()}
-                  className="train-departure data-trains-datetime"
-                >
-                  {format(new Date(departure.from.datetime), "hh:mm")}
-                </span>
-                <span
-                  key={nanoid()}
-                  className="train-departure data-trains-city-name"
-                >
-                  {capitalizeFirstLetter (departure.from.city.name)}
-                </span>
-                <span className="train-departure data-trains-railway_station_name">
-                  {departure.from.railway_station_name + " вокзал"}
-                </span>
-              </div>
-              <div className=" d-flex flex-column trails-duration-block">
-                <span className="trails-duration">
-                  {format(new Date(departure.duration), "hh:mm")}
-                </span>
-                <i
-                  className="fa fa-2x fa-long-arrow-right trais-arrow"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <div className="train-departure-to d-flex flex-column">
-                <span
-                  key={nanoid()}
-                  className="train-departure data-trains-datetime"
-                >
-                  {format(new Date(departure.to.datetime), "hh:mm")}
-                </span>
-                <span
-                  key={nanoid()}
-                  className="train-departure data-trains-city-name"
-                >
-                  {capitalizeFirstLetter (departure.to.city.name)}
-                </span>
-                <span className="train-departure data-trains-railway_station_name">
-                  {departure.to.railway_station_name + " вокзал"}
-                </span>
-              </div>
-            </div>
-          </div>
-  
-          <div
-            key={nanoid()}
-            className="card-bottom p-0 card-trains-menu-item-bottom"
-          >
-            <div className="available-wagons-block">
-              {departure.have_fourth_class && (
-                <AvailableVagons
-                
-                  amount={departure.available_seats_info.fourth}
-                  type="Сидячий"
-                  min_price={departure.min_price}
-                  className="fourth"
-                />
-              )}
-              {departure.have_third_class && (
-                <AvailableVagons
-                
-                  amount={departure.available_seats_info.third}
-                  type="Плацкарт"
-                  min_price={departure.price_info.third.top_price}
-                  className="third"
-                />
-              )}
-              {departure.have_second_class && (
-                <AvailableVagons
-                  key={nanoid()}
-                  amount={departure.available_seats_info.second}
-                  type="Купе"
-                  min_price={departure.price_info.second.top_price}
-                  className="second"
-                />
-              )}
-              {departure.have_first_class && (
-                <AvailableVagons
-                  key={nanoid()}
-                  amount={departure.available_seats_info.first}
-                  type="Люкс(СВ)"
-                  min_price={departure.price_info.first.top_price}
-                  className="first"
-                />
-              )}
-              <CardIconsBlock
-                key={nanoid()}
-                wifi={departure.have_wifi}
-                express={departure.is_express}
-              />
-            </div>
-            <button className="btn selection-seats" onClick={params.id?() => navigate(`${params.id}`):null}>Выбрать места</button>
-          </div>
-        </div>
-      </React.Fragment>
-    );
+  const params = useParams();
+  const navigate = useNavigate();
+  params.id = departure.train._id;
+  console.log(departure, "departure");
+  const dataTrain = {
+    duration: departure.duration,
+    statusWagons: [
+      { name: "fourth", status: departure.have_fourth_class },
+      { name: "third", status: departure.have_third_class },
+      { name: "second", status: departure.have_second_class },
+      { name: "first", status: departure.have_first_class },
+    ],
+    from: {
+      trainName: departure.train.name,
+      name: departure.from.city.name,
+      datetime: departure.from.datetime,
+      railway_station_name: departure.from.railway_station_name,
+    },
+    to: {
+      name: departure.to.city.name,
+      datetime: departure.to.datetime,
+      railway_station_name: departure.to.railway_station_name,
+    },
+    train: departure.train,
+    available_seats_info: departure.available_seats_info,
+    price_info: departure.price_info,
   };
-  export default TrainsMenuCard;
 
-  /*HOC приделать для AvailableVagons, он много места занимает */
+  const filteredWagons = dataTrain.statusWagons.filter(
+    (item) => item.status === true
+  );
+
+  const dataWagons = filteredWagons.map((item) => {
+    if (item.name === "fourth") {
+      item.amount = departure.available_seats_info.fourth;
+      item.min_price = departure.price_info.fourth.bottom_price;
+      item.type = "Сидячий";
+    }
+    if (item.name === "third") {
+      item.amount = departure.available_seats_info.third;
+      item.min_price = departure.price_info.third.bottom_price;
+      item.type = "Плацкарт";
+    }
+    if (item.name === "second") {
+      item.amount = departure.available_seats_info.second;
+      item.min_price = departure.price_info.second.bottom_price;
+      item.type = "Купе";
+    }
+    if (item.name === "first") {
+      item.amount = departure.available_seats_info.first;
+      item.min_price = departure.price_info.first.bottom_price;
+      item.type = "Люкс";
+    }
+    console.log(item, "item99");
+    return item;
+  });
+
+  return (
+    <React.Fragment>
+      <Card key={departure.train._id} className="trains-menu-item">
+        <CardTop className="trains-menu-item">
+          <MySvgIcon
+            type={"trains-menu"}
+            className={"trains-menu"}
+            icon={icon_train}
+          />
+          <TrainInfo data={dataTrain} className="trains-menu" />
+        </CardTop>
+        <CardBody className="trains-menu-item">
+          <TrailsData
+            data={dataTrain}
+            className="trains-menu"
+            icon={icon_yellow_arrow_right}
+          />
+        </CardBody>
+        <CardBottom className="trains-menu">
+          <div className="trains-menu-available-vagons ">
+            {dataWagons.map((item) => (
+              <AvailableVagons
+                key={nanoid()}
+                amount={item.amount}
+                type={item.type}
+                min_price={item.min_price}
+                className="trains-menu_item"
+              />
+            ))}
+          </div>
+          <CardIconsBlock
+            wifi={true}
+            express={true}
+            className={"trains-menu_icons-block"}
+          />
+          <div className="trains-menu_control">
+            <Button
+              text="Выбрать места"
+              type="selection-seats"
+              onClick={params.id ? () => navigate(`${params.id}`) : null}
+            ></Button>
+          </div>
+        </CardBottom>
+      </Card>
+    </React.Fragment>
+  );
+};
+
+export default TrainsMenuCard;
+
+/*HOC приделать для AvailableVagons, он много места занимает */

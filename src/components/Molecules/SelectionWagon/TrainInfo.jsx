@@ -1,11 +1,14 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../../utils/trainSelectionUtils";
 
-const TrainInfo = ({ data }) => {
+const TrainInfo = ({ className, data }) => {
+  if (!data || data === {}) {
+    return;
+  }
   return (
     <React.Fragment>
-      <div className="trail">
-        <span className="trains-number">106C</span>
+      <div className={className + " trail"}>
+        <span className={className +" trains-number"}>106C</span>
         <span className="trail-city-name">
           {capitalizeFirstLetter(data.from.name)}
         </span>
@@ -13,6 +16,7 @@ const TrainInfo = ({ data }) => {
         <span className="trail-city-name d-block">
           {capitalizeFirstLetter(data.to.name)}
         </span>
+        {data.from.trainName!==""?<span className="train-name">{data.from.trainName}</span>:null}
       </div>
     </React.Fragment>
   );

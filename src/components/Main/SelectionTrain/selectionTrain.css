@@ -1,5 +1,5 @@
 /*Selection Train*/
-.main-content__wrap{
+.main-content__wrap {
   margin-top: 434px;
   background-color: #e5e5e5;
   position: relative;
@@ -208,17 +208,17 @@ button.btn.puncts-list__btn:focus {
   flex-direction: column;
   max-width: 959px;
 }
-.card.card-trains-menu-item {
+.trains-menu-item_card.card {
   display: flex;
   flex-direction: row;
-
+  width: 959px;
   background: #ffffff;
   border: 1px solid #c4c4c4;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   margin: 0;
   margin-bottom: 49px;
 }
-.card-top.card-trains-menu-item-top {
+.card-top.trains-menu-item {
   display: flex;
   flex-direction: column;
   width: 197px;
@@ -242,7 +242,7 @@ h6.train-departure.trains-number {
   color: #3e3c41;
 }
 
-.icon-train {
+.trains-menu__icon {
   width: 86px;
   height: 86px;
   margin-left: 43px;
@@ -284,6 +284,7 @@ i.fa.fa-long-arrow-right {
 
 .train-departure-from {
   width: 155px;
+  margin-bottom: 63px;
 }
 .train-departure.data-trains-datetime {
   font-family: "Roboto";
@@ -325,6 +326,12 @@ span.trails-duration {
   color: #c4c4c4;
 }
 
+.trails-duration-block > .trains-menu-svgIcon-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
 i.fa.fa-2x.fa-long-arrow-right.trais-arrow {
   color: #ffa800;
 }
@@ -332,8 +339,22 @@ i.fa.fa-2x.fa-long-arrow-right.trais-arrow {
   margin-left: 4px;
   margin-right: 39px;
 }
+img.trains-menu-reverse__icon {
+  transform: rotate(180deg);
+}
 
-.available-wagons-block {
+.card-bottom.trains-menu_bottom {
+  width: 283px;
+  border-left: 1px dashed #E5E5E5;
+}
+.trains-menu-available-vagons {
+  width: 283px;
+  padding-left: 27px;
+  padding-right: 22px;
+  margin-top: 41px;
+}
+
+/*.available-wagons-block {
   margin-left: 27px;
   margin-right: 24px;
   margin-top: 40px;
@@ -341,7 +362,7 @@ i.fa.fa-2x.fa-long-arrow-right.trais-arrow {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+}*/
 .available-wagons_block-item {
   margin-bottom: 33px;
   position: relative;
@@ -453,12 +474,24 @@ img.icon_rocket {
   opacity: 0.2;
 }
 
-.card-trains-menu-item__icons-block {
-  font-size: 20px;
+.trains-menu_icons-block {
+  color: #c4c4c4;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 28px;
+}
+.card-trains-menu-item__icons-block.text-right.mr-2 {
   color: #c4c4c4;
 }
-
-button.btn.selection-seats {
+.trains-menu_control {
+  padding-left: 27px;
+  padding-right: 22px;
+  margin-top: 17px;
+  display: flex;
+  justify-content: flex-end;
+}
+button.selection-seats_btn {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -469,17 +502,13 @@ button.btn.selection-seats {
   width: 228px;
   height: 39px;
 
-  margin: 0 auto;
-  margin-top: 18px;
-
-  margin-bottom: 24px;
   background: #ffa800;
   border-radius: 5px;
 }
-button.btn.selection-seats:hover {
+button.selection-seats_btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-button.btn.selection-seats:active {
+button.selection-seats_btn:active {
   box-shadow: none;
   background: #e5e5e5;
   color: #ffa800;

@@ -9,7 +9,7 @@ import {
 } from "../../Main/CardsBlock/CardsMolecules";
 const TrailDetails = ({ className, data }) => {
 
-  /**инфо о поезде,  "выбрать другой поезд" */
+  /**инфо о поезде на странице выбора вагона,  "выбрать другой поезд" */
  
   return (
     <React.Fragment>

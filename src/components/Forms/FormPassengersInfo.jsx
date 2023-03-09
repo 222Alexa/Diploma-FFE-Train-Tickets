@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import ControlledCheckbox from "../Molecules/ControlledCheckbox";
 import ControllableStates from "../Molecules/ControllableStates";
 import ControlledInput from "../Molecules/ControlledInput";
@@ -10,7 +11,8 @@ const FormPassengersInfo = () => {
   const [name, setName] = useState("");
   const [secondName, setSecondName] = useState("");
   const [surName, setSurName] = useState("");
-
+const location=useLocation();
+console.log(location)
   const clickHandler = (event) => {
     if (event.target.id === gender.id) {
       return;
@@ -22,7 +24,7 @@ const FormPassengersInfo = () => {
   return (
     <React.Fragment>
       <div className="form passengers-data_form">
-        <div className="passengers-data_type">
+       <div className="passengers-data_type">
           <ControllableStates
             type="age"
             state ={age}

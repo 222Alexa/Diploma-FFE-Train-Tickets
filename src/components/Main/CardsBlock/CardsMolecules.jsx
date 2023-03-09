@@ -10,26 +10,27 @@ import icon_clock from "../../../img/selectionTrain/icon_clock.svg";
 import icon_yellow_train from "../../../img/selectionTrain/icon_yellow-train.svg";
 import icon_yellow_arrow_right from "../../../img/selectionTrain/icon_yellow-arrow-right.svg";
 
-export const CardTop = ({ className, data }) => {
+export const CardTop = ({ className, data, icon, children }) => {
     return (
       <React.Fragment>
         <div key={nanoid()} className={"card-top "+ className}>
-          <MySvgIcon
+        {children?null: <MySvgIcon
             type={className}
             className={className}
-            icon={icon_yellow_train}
-          />
-          <TrainInfo data={data} />
+            icon={icon? icon:icon_yellow_train}
+          />}
+          {children? children:<TrainInfo data={data} className={className}/>}
         </div>
       </React.Fragment>
     );
   };
 
-  export const CardBody = ({ className, data }) => {
+  export const CardBody = ({ className, data, children }) => {
 
     return (
       <React.Fragment>
         <div key={nanoid()} className={"card-body " + className}>
+          {children? children:
           <div className={className + "-group d-flex flex-row"}>
             <div className="train-departure-from d-flex flex-column">
               <span
@@ -68,18 +69,19 @@ export const CardTop = ({ className, data }) => {
                 {data.to.railway_station_name + " вокзал"}
               </span>
             </div>
-          </div>
+          </div>}
         </div>
       </React.Fragment>
     );
   };
   
-  export const CardBottom = ({ className, data }) => {
+  export const CardBottom = ({ className, data, children }) => {
     return (
       <React.Fragment>
         <div className={"card-bottom " + className + "_bottom"}>
-          <MySvgIcon  type={className} className={className} icon={icon_clock} />
-          <TimingBlock className={className} duration={data} />
+          {children? null:<MySvgIcon  type={className} className={className} icon={icon_clock} />}
+           {children? null:<TimingBlock className={className} duration={data} />}
+           {children? children:null}
         </div>
       </React.Fragment>
     );
